@@ -1,6 +1,6 @@
 import Article, {ArticleResponse} from "@/components/layout/articles/article";
 import React from "react";
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import {cn} from "@/lib/utils";
 import {buttonVariants} from "@/toolkit/components/ui/button";
 

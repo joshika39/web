@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import {getComponent, isDevelopment} from "@/lib/utils";
 import {HoverCard, HoverCardContent, HoverCardTrigger} from "@/toolkit/components/hover-card";
 import {Badge} from "@/toolkit/components/badge";

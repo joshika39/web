@@ -7,7 +7,7 @@ import {AssetInfo, getRelease, getTags} from "@/lib/gh-utils";
 import {cn, convertOptionToPlatform, Platform, platformOptions} from "@/lib/utils";
 import {AssetsTable} from "@/components/layout/download/assets-table";
 import {formatTranslation as f} from "@/toolkit/i18n/utils"
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import {buttonVariants} from "@/toolkit/components/ui/button";
 import {Separator} from "@/toolkit/components/ui/separator";
 import {ScrollArea} from "@/toolkit/components/ui/scroll-area";

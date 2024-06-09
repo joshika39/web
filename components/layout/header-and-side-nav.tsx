@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import {RiDiscordFill, RiGithubFill, RiMenuUnfoldLine, RiStarLine, RiTwitterXFill} from "@remixicon/react"
 import {Sheet, SheetContent, SheetTrigger} from "@/toolkit/components/ui/sheet";
 import {Button, buttonVariants} from "@/toolkit/components/ui/button";

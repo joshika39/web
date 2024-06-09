@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
 import ALogoDark from '@/public/a-logo-onlight.png';

@@ -1,7 +1,7 @@
 import {CardBody, CardContainer, CardItem} from "@/toolkit/components/ui/3d-card";
 import Image from "next/image";
 import hero from "@/public/hero.png";
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import {buttonVariants} from "@/toolkit/components/ui/button";
 
 export type MainHeroCardProps = {

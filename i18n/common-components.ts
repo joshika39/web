@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import {buttonVariants} from "@/toolkit/components/button";
 
 export const getLink = (href: string, key = 1, rest = {}) => {

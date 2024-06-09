@@ -1,7 +1,7 @@
 'use client'
 
 import {usePathname, useSearchParams} from 'next/navigation'
-import Link from 'next/link'
+import Link from '@/toolkit/components/custom/link'
 import {i18n, isNotStarted, isReviewed, langDict} from '@/i18n/i18n.config';
 import {
   DropdownMenu,

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 import {buttonVariants} from "@/toolkit/components/ui/button";
 import {Card, CardContent, CardFooter, CardHeader} from "@/toolkit/components/ui/card";
 import {cn} from "@/lib/utils";

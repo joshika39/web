@@ -10,7 +10,7 @@ import {
 } from "@/toolkit/components/ui/table"
 import {AssetInfo} from "@/lib/gh-utils";
 import {RiDownload2Fill} from "@remixicon/react";
-import Link from "next/link";
+import Link from "@/toolkit/components/custom/link";
 
 
 export type AssetsTableLocale = {
