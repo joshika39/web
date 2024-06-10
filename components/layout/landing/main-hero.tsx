@@ -2,13 +2,14 @@
 import { motion } from "framer-motion";
 import {replaceComponent as rC} from "@/toolkit/i18n/utils";
 import {HeroHighlight, Highlight} from "@/toolkit/components/hero-highlight";
+import {useState} from "react";
 
 type MainHeroProps = {
   translation: string;
 };
 
 export function MainHero({translation}: MainHeroProps) {
-  const formatted = rC(translation, {key: "1", type: Highlight, rest: {className: "text-black dark:text-white"}});
+  const formatted = rC(translation, {key: "1", type: "span", rest: {className: "text-primary"}});
   return (
     <HeroHighlight className={'z-20'}>
       <motion.h1
@@ -24,7 +25,7 @@ export function MainHero({translation}: MainHeroProps) {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="px-4 sm:px-0 text-3xl md:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-left mx-auto "
+        className="px-4 sm:px-0 text-3xl md:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-left mx-auto"
       >
         {formatted}
       </motion.h1>
