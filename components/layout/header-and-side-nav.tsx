@@ -1,5 +1,4 @@
 import Link from "@/toolkit/components/custom/link";
-import {RiDiscordFill, RiGithubFill, RiMenuUnfoldLine, RiStarLine, RiTwitterXFill} from "@remixicon/react"
 import {Sheet, SheetContent, SheetTrigger} from "@/toolkit/components/ui/sheet";
 import {Button, buttonVariants} from "@/toolkit/components/ui/button";
 import Logo from "@/public/logo.png";
@@ -11,11 +10,11 @@ import {Locale} from "@/i18n/i18n.config";
 import {getDictionary} from "@/i18n/dictionaries";
 import ThemedImage from "@/toolkit/components/themed-image";
 import {FaDiscord, FaGithub, FaTwitter} from "react-icons/fa";
+import {Github, Menu, SquareCode, Star, Twitter} from "lucide-react";
 
 type HeaderAndSideNavProps = {
   lang: Locale;
 }
-
 const linkClasses = "text-muted-foreground hover:text-foreground flex flex-row gap-2 items-center";
 
 export default async function HeaderAndSideNav({lang}: HeaderAndSideNavProps) {
@@ -30,7 +29,7 @@ export default async function HeaderAndSideNav({lang}: HeaderAndSideNavProps) {
               className="shrink-0 md:hidden"
               paddingH="sm"
             >
-              <RiMenuUnfoldLine className="h-5 w-5"/>
+              <Menu className="h-5 w-5"/>
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
@@ -52,19 +51,20 @@ export default async function HeaderAndSideNav({lang}: HeaderAndSideNavProps) {
                 href="https://github.com/Floorp-Projects/Floorp"
                 className={linkClasses}
               >
-                {dict.components.starUs} <RiStarLine className="h-5 w-5" color="yellow"/>
+                {dict.components.starUs} <Star className="h-5 w-5" color="yellow"/>
               </Link>
               <Link href={`/${lang}/download`} className="text-muted-foreground hover:text-foreground">
                 {dict.components.header.links.download}
               </Link>
               <Link href="https://github.com/floorp-Projects/floorp/" className={linkClasses}>
-                <RiGithubFill className="h-5 w-5"/> GitHub
+                <SquareCode className="h-5 w-5"/> GitHub
               </Link>
               <Link href="https://aka.ablaze.one/discord" className={linkClasses}>
-                <RiDiscordFill className="h-5 w-5"/> Discord
+                <Twitter className="h-5 w-5"/>
+                Discord
               </Link>
               <Link href="https://twitter.com/Floorp_Browser" className={linkClasses}>
-                <RiTwitterXFill className="h-5 w-5"/>
+                <Twitter className="h-5 w-5"/>
               </Link>
             </nav>
           </SheetContent>

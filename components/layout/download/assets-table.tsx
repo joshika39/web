@@ -9,9 +9,8 @@ import {
   TableRow,
 } from "@/toolkit/components/ui/table"
 import {AssetInfo} from "@/lib/gh-utils";
-import {RiDownload2Fill} from "@remixicon/react";
 import Link from "@/toolkit/components/custom/link";
-
+import {Download} from "lucide-react";
 
 export type AssetsTableLocale = {
   architecture: string;
@@ -43,7 +42,7 @@ export function AssetsTable({items, locale}: AssetsTableProps) {
             <TableCell>{item.fileSize}</TableCell>
             <TableCell className="text-right">
               <Link href={item.url}>
-                <RiDownload2Fill className="h-5 w-5"/>
+                <Download className="h-5 w-5"/>
               </Link>
             </TableCell>
           </TableRow>
