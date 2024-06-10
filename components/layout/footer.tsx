@@ -15,7 +15,7 @@ export default function Footer() {
           darkImage={LogoDark}
           lightImage={Logo}
           alt={"logo"}
-          rest={{width: 100, height: 50}}
+          className={'w-20'}
         />
         <Link
           href={'https://ablaze.one'}
@@ -25,7 +25,7 @@ export default function Footer() {
             darkImage={ALogoLight}
             lightImage={ALogoDark}
             alt={"ablaze"}
-            rest={{width: 100, height: 30}}
+            className={'w-20'}
           />
         </Link>
         <p className={'text-center text-sm text-neutral-600 dark:text-gray-50'}>
