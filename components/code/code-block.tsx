@@ -3,9 +3,6 @@ import React, { ReactNode } from "react";
 import CopyButton from "@/components/code/copy2clipboard";
 import { cn } from "@/lib/utils";
 
-/**
- * It can display code blocks with a copy button.
- */
 export default function CodeBlock({
   children,
   className,
